@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about Book Haven Bookstore — our story, hours, and how to reach us for orders and feedback." />
+  <title>About Us | Book Haven Bookstore</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link" aria-label="Book Haven Bookstore — Home">
+        <div class="logo-icon" aria-hidden="true">📚</div>
+        <div class="logo-text">Book Haven<span>Bookstore</span></div>
+      </a>
+      <span class="page-title" aria-hidden="true">About Us</span>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="community.html">Community</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">🏠 Home</a>
+      <a href="gallery.html">📖 Gallery</a>
+      <a href="about.html">ℹ️ About Us</a>
+      <a href="community.html">🌱 Community</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main-content">
+
+    <!-- ABOUT HERO BANNER -->
+    <div class="about-banner">
+      <div class="container">
+        <h1>About Book Haven</h1>
+        <p>Where every book tells a story — and every customer becomes part of ours.</p>
+      </div>
+    </div>
+
+    <!-- ABOUT CONTENT -->
+    <section class="about-section">
+      <div class="container about-grid">
+
+        <div class="about-text">
+          <h2 class="section-title">Our Story</h2>
+          <p>Book Haven Bookstore was founded in 2010 by lifelong reader and former librarian Margaret Ellis, who dreamed of a neighborhood bookstore that felt like a second home. Nestled in a restored Victorian building on Maple Street, Book Haven has served our community for over a decade with warmth, expertise, and a genuinely curated collection.</p>
+          <p>We believe books change lives — and that the right book at the right moment can open worlds. That's why our staff reads voraciously and takes your reading recommendations personally. Whether you're looking for a gift, a new obsession, or a rare collectible, we'll help you find it.</p>
+          <p>Our mission is simple: to be the most welcoming, knowledgeable, and community-rooted bookstore in the region. We are proud supporters of local literacy programs, school partnerships, and the simple joy of sitting down with a great book.</p>
+        </div>
+
+        <div class="about-sidebar">
+          <div class="about-stat"><span>15+</span> Years in Business</div>
+          <div class="about-stat"><span>20,000+</span> Titles in Stock</div>
+          <div class="about-stat"><span>500+</span> Rare Collectibles</div>
+          <div class="about-stat"><span>12</span> Local Programs Supported</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BUSINESS HOURS -->
+    <section class="hours-section" aria-labelledby="hours-heading">
+      <div class="container">
+        <h2 id="hours-heading" class="section-title">Business Hours</h2>
+        <div class="hours-table-wrap">
+          <table class="hours-table" aria-label="Store business hours">
+            <caption class="visually-hidden">Book Haven Bookstore hours of operation</caption>
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Hours</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday – Friday</td>
+                <td>9:00 AM – 8:00 PM</td>
+                <td><span class="status open">Open</span></td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>10:00 AM – 9:00 PM</td>
+                <td><span class="status open">Open</span></td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>11:00 AM – 6:00 PM</td>
+                <td><span class="status open">Open</span></td>
+              </tr>
+              <tr class="holiday-row">
+                <td>Public Holidays</td>
+                <td>12:00 PM – 5:00 PM</td>
+                <td><span class="status limited">Limited Hours</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="hours-note">📍 123 Maple Street, Downtown · 📞 (555) 012-3456 · 📧 hello@bookhaven.com</p>
+      </div>
+    </section>
+
+    <!-- CONTACT / CUSTOM ORDER FORM -->
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-intro">
+            <h2 id="contact-heading" class="section-title">Contact Us &amp; Custom Orders</h2>
+            <p>Have a question, feedback, or want to place a custom book order? Fill out the form and we'll get back to you within 24 hours.</p>
+            <ul class="contact-bullets">
+              <li>📦 Custom orders typically arrive in 5–7 business days</li>
+              <li>🔍 Out-of-print searches available — just ask!</li>
+              <li>🎁 Gift notes can be included with any order</li>
+              <li>📚 Bulk orders for schools/libraries welcome</li>
+            </ul>
+          </div>
+
+          <form id="contact-form" class="contact-form" novalidate aria-labelledby="contact-heading">
+            <div class="form-group">
+              <label for="name">Name <span class="required" aria-label="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="optional">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="feedback">Feedback / Order Information <span class="required" aria-label="required">*</span></label>
+              <textarea id="feedback" name="feedback" placeholder="Tell us what you're looking for, or share your feedback…"></textarea>
+            </div>
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="custom-order" name="custom-order" />
+              <label for="custom-order">This is a Custom Order request</label>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">✉️ Submit</button>
+              <button type="button" id="clear-form-btn" class="btn btn-gray">✕ Clear Form</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-subscribe">
+        <h3>Sign up for our Newsletter</h3>
+        <form class="subscribe-form" aria-label="Newsletter signup">
+          <input type="email" placeholder="Your email" required aria-label="Email address" />
+          <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-right">
+        <nav class="social-links" aria-label="Social media links">
+          <a href="#" aria-label="Facebook"><span aria-hidden="true">f</span></a>
+          <a href="#" aria-label="Instagram"><span aria-hidden="true">📷</span></a>
+          <a href="#" aria-label="Twitter/X"><span aria-hidden="true">✕</span></a>
+          <a href="#" aria-label="YouTube"><span aria-hidden="true">▶</span></a>
+        </nav>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About Us</a>
+          <a href="community.html">Community</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Book Haven Bookstore. All rights reserved.</p></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

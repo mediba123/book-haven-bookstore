@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse Book Haven Bookstore's curated selection — add books to your cart and shop online." />
+  <title>Gallery | Book Haven Bookstore</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link" aria-label="Book Haven Bookstore — Home">
+        <div class="logo-icon" aria-hidden="true">📚</div>
+        <div class="logo-text">Book Haven<span>Bookstore</span></div>
+      </a>
+      <span class="page-title" aria-hidden="true">Gallery</span>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="community.html">Community</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">🏠 Home</a>
+      <a href="gallery.html">📖 Gallery</a>
+      <a href="about.html">ℹ️ About Us</a>
+      <a href="community.html">🌱 Community</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main-content">
+    <section class="gallery-section">
+      <div class="container">
+
+        <div class="gallery-header">
+          <div>
+            <h1 class="section-title">Our Book Collection</h1>
+            <p class="gallery-sub">Browse our handpicked selection — click <strong>Add to Cart</strong> to start your order.</p>
+          </div>
+          <button class="btn btn-primary" id="view-cart-btn" aria-label="View your shopping cart">
+            🛒 View Cart
+          </button>
+        </div>
+
+        <!-- BOOK TABLE (3×3 grid for desktop, responsive cards on mobile) -->
+        <div class="books-table-wrapper" role="region" aria-label="Book catalog">
+          <table class="books-table" aria-label="Available books">
+            <caption class="visually-hidden">Browse and add books to your cart</caption>
+            <tbody>
+
+              <!-- Row 1 -->
+              <tr>
+                <td>
+                  <article class="book-card">
+                    <div class="book-thumb bt-1" aria-label="Cover of The Midnight Library">📖</div>
+                    <h3>The Midnight Library</h3>
+                    <p class="book-meta">Matt Haig · Fiction</p>
+                    <p class="book-blurb">Between life and death lies a library containing books of infinite possible lives. Nora's choices can change everything.</p>
+                    <button class="btn btn-primary btn-sm btn-add-cart" data-item="The Midnight Library">Add to Cart</button>
+                  </article>
+                </td>
+                <td>
+                  <article class="book-card">
+                    <div class="book-thumb bt-2" aria-label="Cover of Educated">📖</div>
+                    <h3>Educated</h3>
+                    <p class="book-meta">Tara Westover · Memoir</p>
+                    <p class="book-blurb">A young woman kept out of school leaves her survivalist family and earns a PhD from Cambridge. Stunning and unforgettable.</p>
+                    <button class="btn btn-primary btn-sm btn-add-cart" data-item="Educated">Add to Cart</button>
+                  </article>
+                </td>
+                <td>
+                  <article class="book-card">
+                    <div class="book-thumb bt-3" aria-label="Cover of Where the Crawdads Sing">📖</div>
+                    <h3>Where the Crawdads Sing</h3>
+                    <p class="book-meta">Delia Owens · Mystery</p>
+                    <p class="book-blurb">A young woman raised alone in the Carolina marshes becomes the prime suspect in a local murder. Part coming-of-age, part mystery.</p>
+                    <button class="btn btn-primary btn-sm btn-add-cart" data-item="Where the Crawdads Sing">Add to Cart</button>
+                  </article>
+                </td>
+              </tr>
+
+              <!-- Row 2 -->
+              <tr>
+                <td>
+                  <article class="book-card">
+                    <div class="book-thumb bt-4" aria-label="Cover of Atomic Habits">📖</div>
+                    <h3>Atomic Habits</h3>
+                    <p class="book-meta">James Clear · Self-Help</p>
+                    <p class="book-blurb">Tiny changes, remarkable results. A practical guide to building good habits and breaking bad ones using the science of behavior.</p>
+                    <button class="btn btn-primary btn-sm btn-add-cart" data-item="Atomic Habits">Add to Cart</button>
+                  </article>
+                </td>
+                <td>
+                  <article class="book-card">
+                    <div class="book-thumb bt-5" aria-label="Cover of The Great Gatsby">📖</div>
+                    <h3>The Great Gatsby</h3>
+                    <p class="book-meta">F. Scott Fitzgerald · Classic</p>
+                    <p class="book-blurb">A collectible first-edition replica of the quintessential American novel. The Jazz Age, ambition, and the elusive green light.</p>
+                    <button class="btn btn-primary btn-sm btn-add-cart" data-item="The Great Gatsby (Collectible)">Add to Cart</button>
+                  </article>
+                </td>
+                <td>
+                  <article class="book-card">
+                    <div class="book-thumb bt-6" aria-label="Cover of Dune">📖</div>
+                    <h3>Dune</h3>
+                    <p class="book-meta">Frank Herbert · Sci-Fi</p>
+                    <p class="book-blurb">Set in a distant future on a desert planet, Paul Atreides must navigate political intrigue, religion, and destiny to fulfill his fate.</p>
+                    <button class="btn btn-primary btn-sm btn-add-cart" data-item="Dune">Add to Cart</button>
+                  </article>
+                </td>
+              </tr>
+
+              <!-- Row 3 -->
+              <tr>
+                <td>
+                  <article class="book-card">
+                    <div class="book-thumb bt-7" aria-label="Cover of The Very Hungry Caterpillar">📖</div>
+                    <h3>The Very Hungry Caterpillar</h3>
+                    <p class="book-meta">Eric Carle · Children's</p>
+                    <p class="book-blurb">A beloved classic for young readers following a caterpillar's journey through the days of the week and the joy of transformation.</p>
+                    <button class="btn btn-primary btn-sm btn-add-cart" data-item="The Very Hungry Caterpillar">Add to Cart</button>
+                  </article>
+                </td>
+                <td>
+                  <article class="book-card">
+                    <div class="book-thumb bt-8" aria-label="Cover of Becoming">📖</div>
+                    <h3>Becoming</h3>
+                    <p class="book-meta">Michelle Obama · Biography</p>
+                    <p class="book-blurb">Michelle Obama's deeply personal memoir about her journey from the South Side of Chicago to the White House — and beyond.</p>
+                    <button class="btn btn-primary btn-sm btn-add-cart" data-item="Becoming">Add to Cart</button>
+                  </article>
+                </td>
+                <td>
+                  <article class="book-card">
+                    <div class="book-thumb bt-9" aria-label="Cover of Gone Girl">📖</div>
+                    <h3>Gone Girl</h3>
+                    <p class="book-meta">Gillian Flynn · Thriller</p>
+                    <p class="book-blurb">On the morning of their fifth wedding anniversary, Nick Dunne's wife Amy disappears. A razor-sharp thriller full of twists.</p>
+                    <button class="btn btn-primary btn-sm btn-add-cart" data-item="Gone Girl">Add to Cart</button>
+                  </article>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SHOPPING CART MODAL -->
+  <div class="modal-overlay" id="cart-modal" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <div class="modal">
+      <button class="modal-close" id="cart-close" aria-label="Close cart" data-first-focus>✕</button>
+      <h2 id="cart-title">🛒 Your Cart</h2>
+      <div id="cart-items-list">
+        <p class="cart-empty-msg">Your cart is empty.</p>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-gray" id="clear-cart-btn">🗑 Clear Cart</button>
+        <button class="btn btn-green" id="process-order-btn">✔ Process Order</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-subscribe">
+        <h3>Sign up for our Newsletter</h3>
+        <form class="subscribe-form" aria-label="Newsletter signup">
+          <input type="email" placeholder="Your email" required aria-label="Email address" />
+          <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-right">
+        <nav class="social-links" aria-label="Social media links">
+          <a href="#" aria-label="Facebook"><span aria-hidden="true">f</span></a>
+          <a href="#" aria-label="Instagram"><span aria-hidden="true">📷</span></a>
+          <a href="#" aria-label="Twitter/X"><span aria-hidden="true">✕</span></a>
+          <a href="#" aria-label="YouTube"><span aria-hidden="true">▶</span></a>
+        </nav>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About Us</a>
+          <a href="community.html">Community</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Book Haven Bookstore. All rights reserved.</p></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
